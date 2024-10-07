@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class Cachorro extends Animal {
 
-public class Cachorro {
+    // Construtor que chama o construtor da classe base
+    public Cachorro(String nome) {
+        super(nome);  // Chama o construtor da classe Animal
+    }
+
+    // Método específico para Cachorro
+    public void late() {
+        System.out.println(this.nome + " está latindo.");
+    }
 }
